@@ -8,7 +8,7 @@
 //clean up 
 basic.showIcon(IconNames.Happy)
 
-// Button "A" variable assign
+// Button "A" variable assign.
 let loopCounter1 = 0
 let loopCounter2 = 0
 let loopCounter3 = 0
@@ -17,9 +17,9 @@ let loopCounter4 = 0
 //set up
     input.onButtonPressed(Button.A, function() {
         basic.clearScreen()
-        let sprite = game.createSprite(0, 0)
+        const sprite = game.createSprite(0, 0)
 
-    //move sprite clockwise
+    //Move sprite clockwise.
         while (loopCounter1 <= 5) {
         basic.pause(500)
         sprite.move(1)   
@@ -46,7 +46,7 @@ let loopCounter4 = 0
     sprite.delete()
     })
 
-// Button "B" variable assign
+// Button "B" variable assign.
 let loopCounter5 = 0
 let loopCounter6 = 0
 let loopCounter7 = 0
@@ -55,9 +55,9 @@ let loopCounter8 = 0
 //set up
 input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
-    let sprite1 = game.createSprite(0, 0)
+    const sprite1 = game.createSprite(0, 0)
 
-    //move sprite counter-clockwise
+    //Move sprite counter-clockwise.
     sprite1.turn(Direction.Left, 90)
     while (loopCounter5 <= 5) {
         basic.pause(500)
